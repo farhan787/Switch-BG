@@ -24,6 +24,6 @@ function switchYellow() {
   document.getElementsByTagName('body')[0].style.color = 'black'; 
 }
 function switchRed() {
-  document.getElementsByTagName('body')[0].style.backgroundColor = 'red'; 
+  document.getElementsByTagName('body')[0].style.backgroundColor = 'tomato'; 
   document.getElementsByTagName('body')[0].style.color = 'white'; 
 }
