@@ -50,3 +50,64 @@ p {
 #redButton {
   background: tomato;
 }
+
+#container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  margin-top: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerEffect{
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin-top: 150px;
+  background-color: rgba(0,0,0, 0.1);
+  transform: rotate(-30deg) skew(25deg) scale(0.8);
+  transition: 0.5s;
+}
+
+.containerEffect img{
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.containerEffect:hover img:nth-child(4){
+  transform: translate(160px, -160px);
+  opacity: 1;
+}
+
+.containerEffect:hover img:nth-child(3){
+  transform: translate(120px, -120px);
+  opacity: 0.8;
+}
+
+.containerEffect:hover img:nth-child(2){
+  transform: translate(80px, -80px);
+  opacity: 0.6;
+}
+
+.containerEffect:hover img:nth-child(1){
+  transform: translate(40px, -40px);
+  opacity: 0.4;
+}
+
+@media (max-width: 640px){
+  body{
+    width: 100%;
+    align-content: center;
+  }
+  #container{
+    width: 65%;
+    padding-left: 150px;
+    margin-top: -70px;
+    height: 100vh;
+    display: flex;
+  }
+} 
